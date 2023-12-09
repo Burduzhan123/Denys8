@@ -1,10 +1,22 @@
-let i = 6; 
-
-for (;i <= 1000; i++){
-    if(i % 2 === 0);
-    var string = `Число ${i} є простим числом`
-    console.log(string)
-    if(i % 2 !== 0);
-    var string = `Число ${i} не є простим числом`
-    console.log(string)
+let n = 40;
+for (let i = 2; i <= n; i++) {
+  for (let j = 2; j <= i; j++) {
+    if ((i % j == 0) && (j != i)) {
+      break;
+    } else {
+        var string = `Число ${i} є простим числом`;
+      console.log(string);
+      break;
+    }
+  }
 }
+for (let i = 4; i <= n; i++) {
+    for(let j = 2; j <= i; j++)
+      if (i % 2 != 0) {
+        break;
+      } else {
+          var string = `Число ${i} не є простим числом`;
+        console.log(string);
+        break;
+      }
+    }
